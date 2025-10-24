@@ -1,15 +1,18 @@
+# This file is used by pandoc as a default settings option (e.g. "pandoc --defaults pandocin.yaml").
 # Reference https://pandoc.org/MANUAL.html#defaults-files
 
 input-file: doc.md
-
+bibliography: references.bib
 metadata:
   author:
-  - surname: Doe
-    given-names: J.
-    email: jdoe@example.com
+  - given-names: Jane
+    surname: Roe
+    email: jane@example.com
     orcid: https://orcid.org/0000-0002-1825-0097
   copyright:
-    statement: "© 2025, The Authors"
+    statement: "© 2020, Roe et al"
   license:
-    # link: "https://creativecommons.org/licenses/by/4.0/"
-    text: This document is distributed under the terms of ...
+    link: "https://creativecommons.org/licenses/by/4.0/"
+    text: >-
+      This document is distributed under a Creative Commons Attribution 4.0
+      International license.

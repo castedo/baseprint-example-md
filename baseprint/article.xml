@@ -1,33 +1,102 @@
-<article xmlns:ali="http://www.niso.org/schemas/ali/1.0/">
+<article>
   <front>
     <article-meta>
       <title-group>
-        <article-title>The Title</article-title>
+        <article-title>Baseprinting Example</article-title>
       </title-group>
       <contrib-group>
         <contrib contrib-type="author">
           <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-1825-0097</contrib-id>
           <name>
-            <surname>Doe</surname>
-            <given-names>J.</given-names>
+            <surname>Roe</surname>
+            <given-names>Jane</given-names>
           </name>
-          <email>jdoe@example.com</email>
+          <email>jane@example.com</email>
         </contrib>
       </contrib-group>
       <permissions>
-        <copyright-statement>&#169; 2025, The Authors</copyright-statement>
+        <copyright-statement>&#169; 2020, Roe et al</copyright-statement>
         <license>
-          <ali:license_ref></ali:license_ref>
-          <license-p>This document is distributed under the terms of ...</license-p>
+          <license-ref content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</license-ref>
+          <license-p>This document is distributed under a Creative Commons Attribution 4.0 International license.</license-p>
         </license>
       </permissions>
       <abstract>
-        <p>The abstract
-text.</p>
+        <p>This example demonstrates source files which are used to generate a baseprint from which
+web pages and PDF files can be rendered.</p>
       </abstract>
     </article-meta>
   </front>
-  <body>
-    <p>The main document text.</p>
-  </body>
+  <article-body>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>This example of automated baseprint and web page and PDF preview genration is heavily
+  inspired by manubot<sup>
+          <xref rid="ref-himmelstein_open_2019" ref-type="bibr">1</xref>
+        </sup>.</p>
+      <p>The main document text.</p>
+    </section>
+    <section id="within-document-references">
+      <h2>Within document references</h2>
+      <p>A reference to the introduction <a href="#intro">intro</a>.</p>
+    </section>
+  </article-body>
+  <back>
+    <ref-list>
+      <ref id="ref-himmelstein_open_2019">
+        <element-citation>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Himmelstein</surname>
+              <given-names>Daniel S.</given-names>
+            </name>
+            <name>
+              <surname>Rubinetti</surname>
+              <given-names>Vincent</given-names>
+            </name>
+            <name>
+              <surname>Slochower</surname>
+              <given-names>David R.</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>Dongbo</given-names>
+            </name>
+            <name>
+              <surname>Malladi</surname>
+              <given-names>Venkat S.</given-names>
+            </name>
+            <name>
+              <surname>Greene</surname>
+              <given-names>Casey S.</given-names>
+            </name>
+            <name>
+              <surname>Gitter</surname>
+              <given-names>Anthony</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Schneidman-Duhovny</surname>
+              <given-names>Dina</given-names>
+            </name>
+          </person-group>
+          <article-title>Open collaborative writing with Manubot</article-title>
+          <source-title>PLOS Computational Biology</source-title>
+          <year>2019</year>
+          <month>06</month>
+          <date-in-citation content-type="access-date">
+            <year>2023</year>
+            <month>09</month>
+            <day>17</day>
+          </date-in-citation>
+          <volume>15</volume>
+          <fpage>e1007128</fpage>
+          <issn>1553-7358</issn>
+          <uri>https://dx.plos.org/10.1371/journal.pcbi.1007128</uri>
+          <pub-id pub-id-type="doi">10.1371/journal.pcbi.1007128</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
 </article>
