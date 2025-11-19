@@ -22,7 +22,7 @@
         </license>
       </permissions>
       <abstract>
-        <p>This example demonstrates source files which are used to generate a baseprint from which
+        <p>This example demonstrates source files that are used to generate a baseprint from which
 web pages and PDF files can be rendered.</p>
       </abstract>
     </article-meta>
@@ -30,20 +30,70 @@ web pages and PDF files can be rendered.</p>
   <article-body>
     <section id="intro">
       <h2>Introduction</h2>
-      <p>This example of automated baseprint and web page and PDF preview genration is heavily
-  inspired by manubot<sup>
-          <xref rid="ref-himmelstein_open_2019" ref-type="bibr">1</xref>
-        </sup>.</p>
-      <p>The main document text.</p>
+      <p>This automated genration of a web page for a document is
+inspired by manubot<sup><xref rid="himmelstein_open_2019" ref-type="bibr">1</xref></sup>.</p>
+      <p>Some main document text.</p>
+      <section id="a-subheading">
+        <h3>A subheading</h3>
+        <p>See <a rel="external" href="https://pandoc.org/MANUAL.html">Pandoc documentation</a> for the many heading syntax options.</p>
+      </section>
+    </section>
+    <section id="commonmark-formatting">
+      <h2>CommonMark formatting</h2>
+      <p>CommonMark formatting like <i>italic</i>, <b>bold</b>, and <tt>inline_code</tt> are supported.</p>
+      <p>Lists too:</p>
+      <ul>
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+      </ul>
+      <p>or numbered:</p>
+      <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ol>
+      <blockquote>
+        <p>Blockquotes like this are supported.</p>
+      </blockquote>
+      <p>And preformatted code blocks using three backticks:</p>
+      <pre>print("Hello World")</pre>
+    </section>
+    <section id="more-pandoc-markdown-features">
+      <h2>More Pandoc markdown features</h2>
+      <p>Most of the features of Pandoc markdown are supported.</p>
+      <section id="definitions-lists">
+        <h3>Definitions lists</h3>
+        <dl>
+          <div>
+            <dt>Coffee</dt>
+            <dd>the person upon whom one coughs</dd>
+          </div>
+          <div>
+            <dt>Syntax</dt>
+            <dd>tariff on immorality</dd>
+          </div>
+          <div>
+            <dt>Program</dt>
+            <dd>in favor of the metric system</dd>
+          </div>
+        </dl>
+      </section>
     </section>
     <section id="within-document-references">
       <h2>Within document references</h2>
       <p>A reference to the introduction <a href="#intro">intro</a>.</p>
     </section>
+    <section id="not-yet-supported-feaures">
+      <h2>Not yet supported feaures</h2>
+      <p>Images not supported yet and just result in: </p>
+      <p>Math is not yet support and just resutls in:
+</p>
+    </section>
   </article-body>
   <back>
     <ref-list>
-      <ref id="ref-himmelstein_open_2019">
+      <ref id="himmelstein_open_2019">
         <element-citation>
           <person-group person-group-type="author">
             <name>
@@ -90,10 +140,10 @@ web pages and PDF files can be rendered.</p>
             <month>09</month>
             <day>17</day>
           </date-in-citation>
-          <volume>15</volume>
-          <fpage>e1007128</fpage>
           <issn>1553-7358</issn>
           <uri>https://dx.plos.org/10.1371/journal.pcbi.1007128</uri>
+          <volume>15</volume>
+          <fpage>e1007128</fpage>
           <pub-id pub-id-type="doi">10.1371/journal.pcbi.1007128</pub-id>
         </element-citation>
       </ref>
